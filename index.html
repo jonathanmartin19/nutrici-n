@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrición y Autismo: Guía para Padres y Cuidadores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+            padding-top: 60px; /* Add padding to body to prevent content from being hidden by the fixed navbar */
+        }
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            stroke-width: 1.5;
+        }
+        nav {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Sticky Navbar -->
+    <nav class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-10">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <span class="text-lg font-bold text-blue-600">NutriTEA Guía</span>
+                <div class="hidden md:flex md:items-center md:space-x-6">
+                    <a href="#desafios" class="text-slate-600 hover:text-blue-600 transition">Desafíos</a>
+                    <a href="#estrategias" class="text-slate-600 hover:text-blue-600 transition">Estrategias</a>
+                    <a href="#buscador" class="text-slate-600 hover:text-blue-600 transition">Buscador</a>
+                    <a href="#dietas" class="text-slate-600 hover:text-blue-600 transition">Dietas</a>
+                    <a href="#faq" class="text-slate-600 hover:text-blue-600 transition">FAQ</a>
+                    <a href="#recursos" class="text-slate-600 hover:text-blue-600 transition">Recursos</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-600 hover:text-blue-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#desafios" class="block py-2 px-4 text-sm text-slate-600 hover:bg-blue-50">Desafíos</a>
+            <a href="#estrategias" class="block py-2 px-4 text-sm text-slate-600 hover:bg-blue-50">Estrategias</a>
+            <a href="#buscador" class="block py-2 px-4 text-sm text-slate-600 hover:bg-blue-50">Buscador</a>
+            <a href="#dietas" class="block py-2 px-4 text-sm text-slate-600 hover:bg-blue-50">Dietas</a>
+            <a href="#faq" class="block py-2 px-4 text-sm text-slate-600 hover:bg-blue-50">FAQ</a>
+            <a href="#recursos" class="block py-2 px-4 text-sm text-slate-600 hover:bg-blue-50">Recursos</a>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white text-center py-12 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Nutrición y Trastorno del Espectro Autista (TEA)</h1>
+            <p class="text-lg md:text-xl text-blue-100">Una guía basada en evidencia para padres y cuidadores.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto p-4 md:p-8">
+
+        <!-- Introduction -->
+        <section class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-12 text-center">
+            <h2 class="text-2xl font-bold text-blue-800 mb-3">Cada niño es único. Su nutrición también debe serlo.</h2>
+            <p class="text-slate-600">La alimentación puede ser un desafío significativo para muchos niños con TEA. Esta guía ofrece información y estrategias prácticas, pero es fundamental recordar que el acompañamiento de un equipo profesional (pediatra, nutricionista, terapeuta) es insustituible para crear un plan personalizado y seguro.</p>
+        </section>
+
+        <!-- Common Challenges -->
+        <section id="desafios" class="mb-12">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Desafíos Nutricionales Comunes en el TEA</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1: Selectividad -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+                    <svg class="section-icon text-amber-500 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" /></svg>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Selectividad Alimentaria Extrema</h3>
+                    <p>Rechazo a probar alimentos nuevos y una dieta muy limitada, a menudo basada en texturas, colores, marcas o formas específicas (ej: solo alimentos crujientes o de color amarillo).</p>
+                </div>
+                <!-- Card 2: GI Problems -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+                    <svg class="section-icon text-teal-500 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" /></svg>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Problemas Gastrointestinales</h3>
+                    <p>Una alta prevalencia de estreñimiento crónico, diarrea, dolor abdominal, reflujo e inflamación. Estos problemas pueden afectar el comportamiento y el apetito del niño.</p>
+                </div>
+                <!-- Card 3: Rituals -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+                    <svg class="section-icon text-sky-500 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Rigidez y Rituales</h3>
+                    <p>Necesidad de que las comidas se sirvan de la misma manera siempre: mismos platos, horarios fijos, alimentos que no se tocan entre sí, o comer en un lugar específico.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Strategies -->
+        <section id="estrategias" class="mb-12">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Estrategias Prácticas para el Día a Día</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-4 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <div>
+                            <h4 class="font-semibold text-lg">Establecer Rutinas y un Ambiente Positivo</h4>
+                            <p class="text-slate-600">Ofrece comidas y snacks a la misma hora todos los días. Asegúrate de que el ambiente sea tranquilo, sin distracciones como pantallas. El objetivo es que la hora de comer sea predecible y de baja presión.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-4 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <div>
+                            <h4 class="font-semibold text-lg">Introducción Gradual y Paciente</h4>
+                            <p class="text-slate-600">Nunca fuerces a comer. Introduce alimentos nuevos en cantidades mínimas (del tamaño de un guisante) junto a sus alimentos preferidos, sin presión para que lo coma. La exposición repetida (10-15 veces) puede ser necesaria antes de que lo acepte.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-4 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <div>
+                            <h4 class="font-semibold text-lg">Manejar la Sensibilidad Sensorial</h4>
+                            <p class="text-slate-600">Si a tu hijo no le gustan las texturas mixtas, sirve los alimentos por separado. Si prefiere lo crujiente, prueba con vegetales crudos o chips de manzana horneados. Juega con las texturas y temperaturas para ver qué funciona mejor.</p>
+                        </div>
+                    </li>
+                     <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-4 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <div>
+                            <h4 class="font-semibold text-lg">Involucrar al Niño</h4>
+                            <p class="text-slate-600">Llévalo a la compra, deja que lave las verduras o ayude a mezclar ingredientes. La participación en la preparación de la comida puede aumentar su interés y disposición a probarla.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- NEW SECTION: Food Search -->
+        <section id="buscador" class="mb-12">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 text-center">Buscador de Alimentos</h2>
+            <p class="text-center text-slate-600 mb-6 max-w-2xl mx-auto">Escribe el nombre de un alimento para ver sus beneficios potenciales y los desafíos comunes que puede presentar para un niño con TEA. (Ej: Manzana, Leche, Pollo, Brócoli)</p>
+            <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md">
+                <div class="flex flex-col sm:flex-row gap-2">
+                    <input type="text" id="food-search-input" placeholder="Buscar un alimento..." class="flex-grow w-full px-4 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button id="food-search-button" class="w-full sm:w-auto bg-blue-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-blue-700 transition">Buscar</button>
+                </div>
+                <div id="food-search-result" class="mt-6">
+                    <!-- Search results will be injected here by JavaScript -->
+                </div>
+            </div>
+             <p class="text-center text-xs text-slate-500 mt-4"><em><strong>Aviso:</strong> Esta herramienta es solo una guía orientativa y no reemplaza el consejo de un profesional de la salud.</em></p>
+        </section>
+
+
+        <!-- Intervention Diets -->
+        <section id="dietas" class="mb-12">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Dietas de Intervención: ¿Qué Dice la Evidencia?</h2>
+            <div class="bg-amber-50 border border-amber-300 rounded-lg p-6">
+                <div class="flex items-start">
+                    <svg class="w-12 h-12 text-amber-500 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" /></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-amber-800 mb-2">La Dieta Sin Gluten y Sin Caseína (SGSC)</h3>
+                        <p class="text-amber-700 mb-4">Aunque es una de las intervenciones dietéticas más populares, <strong>la mayoría de las revisiones científicas y guías clínicas concluyen que no hay evidencia sólida que respalde su uso generalizado para tratar los síntomas centrales del TEA.</strong></p>
+                        <p class="text-amber-700">Esta dieta solo debe implementarse si existe un diagnóstico médico de enfermedad celíaca, alergia al trigo o intolerancia a la lactosa. Si se realiza sin supervisión, puede provocar importantes deficiencias nutricionales (calcio, vitamina D, fibra).</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mt-4 text-slate-600">Otras dietas (cetogénica, de carbohidratos específicos) también carecen de evidencia robusta y conllevan riesgos. <strong>Nunca inicies una dieta restrictiva sin la guía de un médico y un nutricionista.</strong></p>
+        </section>
+        
+        <!-- FAQ -->
+        <section id="faq" class="mb-12">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Preguntas Frecuentes</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-slate-200">
+                    <button class="faq-question w-full flex justify-between items-center text-left p-4 font-semibold text-slate-700">
+                        <span>Mi hijo solo come pollo empanizado, ¿qué hago?</span>
+                        <svg class="w-5 h-5 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 pt-0 text-slate-600">
+                        <p>Es un desafío común. No lo elimines de su dieta, úsalo como un "alimento seguro". Sírvelo junto a una cantidad diminuta de un nuevo alimento (ej. un trocito de zanahoria) sin presión. Otra estrategia es el "food chaining": introduce alimentos muy similares al pollo empanizado, variando ligeramente la forma, marca o condimento para expandir su repertorio gradualmente.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-slate-200">
+                    <button class="faq-question w-full flex justify-between items-center text-left p-4 font-semibold text-slate-700">
+                        <span>¿Son recomendables los batidos nutricionales?</span>
+                        <svg class="w-5 h-5 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 pt-0 text-slate-600">
+                        <p>Pueden ser una herramienta útil a corto plazo y bajo supervisión médica para evitar deficiencias nutricionales en casos de selectividad muy severa. Sin embargo, no deben reemplazar las comidas ni el trabajo terapéutico para ampliar la variedad de alimentos sólidos, ya que no ayudan a desarrollar las habilidades motoras orales necesarias para la masticación.</p>
+                    </div>
+                </div>
+                 <div class="faq-item bg-white rounded-lg shadow-sm border border-slate-200">
+                    <button class="faq-question w-full flex justify-between items-center text-left p-4 font-semibold text-slate-700">
+                        <span>¿Cómo puedo 'esconder' verduras en sus comidas?</span>
+                        <svg class="w-5 h-5 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 pt-0 text-slate-600">
+                        <p>Integrar purés de verduras (calabacín, zanahoria, espinaca) en salsas, sopas o incluso masas de panqueques puede aumentar la ingesta de nutrientes. Si bien es una buena estrategia nutricional, no sustituye el objetivo a largo plazo de que el niño aprenda a aceptar y comer las verduras en su forma original. Lo ideal es combinar ambas estrategias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="recursos" class="mb-12">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Recursos y Enlaces de Confianza</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a href="https://www.autismspeaks.org/tool-kit/atnair-p-tools-healthy-eating" target="_blank" rel="noopener noreferrer" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <h4 class="font-bold text-blue-600 text-lg">Autism Speaks</h4>
+                    <p class="text-slate-600">Ofrece guías y herramientas sobre alimentación saludable (en inglés y español).</p>
+                </a>
+                <a href="https://infoautismo.usal.es/" target="_blank" rel="noopener noreferrer" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <h4 class="font-bold text-blue-600 text-lg">InfoAutismo (Universidad de Salamanca)</h4>
+                    <p class="text-slate-600">Portal con información rigurosa y recursos sobre TEA para familias y profesionales.</p>
+                </a>
+                <a href="https://www.aeped.es/comite-nutricion-y-lactancia-materna/nutricion-infantil" target="_blank" rel="noopener noreferrer" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <h4 class="font-bold text-blue-600 text-lg">Asociación Española de Pediatría</h4>
+                    <p class="text-slate-600">Información fiable sobre nutrición infantil en general.</p>
+                </a>
+                 <a href="https://www.mayoclinic.org/es/diseases-conditions/autism-spectrum-disorder/expert-answers/autism-and-digestive-symptoms/faq-20322778" target="_blank" rel="noopener noreferrer" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <h4 class="font-bold text-blue-600 text-lg">Mayo Clinic</h4>
+                    <p class="text-slate-600">Artículo de expertos sobre síntomas digestivos y el TEA.</p>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- Final Advice -->
+        <section id="profesionales" class="bg-green-100 border border-green-300 rounded-lg p-8 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-green-800 mb-4">Tu Mejor Herramienta: Un Equipo de Apoyo</h2>
+            <p class="text-green-700 mb-6 max-w-3xl mx-auto">Manejar la nutrición en el TEA no es una tarea para hacer en solitario. Un enfoque multidisciplinario es la estrategia más eficaz y segura. Considera consultar a:</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-green-600 text-white font-semibold py-2 px-4 rounded-full">Pediatra del Desarrollo</span>
+                <span class="bg-green-600 text-white font-semibold py-2 px-4 rounded-full">Nutricionista/Dietista</span>
+                <span class="bg-green-600 text-white font-semibold py-2 px-4 rounded-full">Gastroenterólogo</span>
+                <span class="bg-green-600 text-white font-semibold py-2 px-4 rounded-full">Terapeuta Ocupacional</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300 text-center p-6 mt-12">
+        <p>Esta información tiene fines educativos y no sustituye el consejo médico profesional.</p>
+        <p>&copy; 2025 Guía de Nutrición y TEA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const icon = question.querySelector('svg');
+
+            question.addEventListener('click', () => {
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Food Search Logic
+        const foodSearchInput = document.getElementById('food-search-input');
+        const foodSearchButton = document.getElementById('food-search-button');
+        const foodSearchResult = document.getElementById('food-search-result');
+
+        const foodDatabase = [
+            {
+                name: 'manzana',
+                aliases: ['manzanas'],
+                benefits: ['Buena fuente de fibra (ayuda con el estreñimiento).', 'Textura crujiente y predecible puede ser bien aceptada.'],
+                challenges: ['La piel puede ser una textura problemática para algunos niños.'],
+                tips: 'Prueba a servirla pelada, en rodajas finas, como puré (compota) o deshidratada (chips de manzana).'
+            },
+            {
+                name: 'platano',
+                aliases: ['banana', 'banano'],
+                benefits: ['Rico en potasio y carbohidratos para energía.', 'Textura suave y sabor dulce suelen ser bien aceptados.'],
+                challenges: ['Su textura puede volverse pastosa y desagradable para algunos niños si está muy maduro.'],
+                tips: 'Ideal para batidos o para "esconder" en panqueques o muffins. Congelado, puede ser una golosina refrescante.'
+            },
+            {
+                name: 'leche',
+                aliases: ['lacteos', 'yogur', 'queso'],
+                benefits: ['Excelente fuente de calcio y vitamina D, importantes para los huesos.'],
+                challenges: ['Contiene caseína y lactosa, que pueden causar problemas digestivos en niños con sensibilidad o intolerancia.', 'Es un alérgeno común.'],
+                tips: 'Existen alternativas fortificadas como la leche de almendras, avena o soja. Consulta con un profesional para asegurar que estén enriquecidas con calcio y vitamina D.'
+            },
+            {
+                name: 'pollo',
+                aliases: ['pavo'],
+                benefits: ['Excelente fuente de proteína magra para el crecimiento.'],
+                challenges: ['La textura puede ser fibrosa o seca si se cocina demasiado.', 'Los empanizados (nuggets) pueden crear fijación por una única presentación.'],
+                tips: 'Sírvelo en trozos pequeños y tiernos, desmenuzado en sopas o salsas. Si le gustan los nuggets, busca opciones horneadas con ingredientes simples o hazlos en casa.'
+            },
+            {
+                name: 'brocoli',
+                aliases: ['brocol'],
+                benefits: ['Alto contenido de vitaminas (C, K) y fibra.'],
+                challenges: ['Olor y sabor fuertes pueden causar rechazo.', 'La textura (flores vs. tallo) puede ser inconsistente.'],
+                tips: 'Intenta cocinarlo al vapor para una textura más suave y un olor menos intenso. Sírvelo con una salsa que le guste (queso, hummus) o "escondido" en purés o croquetas.'
+            },
+            {
+                name: 'pan',
+                aliases: ['pasta', 'arroz'],
+                benefits: ['Fuente principal de carbohidratos para energía.'],
+                challenges: ['Contiene gluten, un desafío para niños con sensibilidad o celiaquía.', 'El pan blanco tiene menos fibra y nutrientes que el integral.'],
+                tips: 'Opta por versiones integrales para mayor aporte de fibra. Existen muchas alternativas sin gluten de buena calidad si son necesarias.'
+            },
+            {
+                name: 'huevo',
+                aliases: ['huevos'],
+                benefits: ['Fuente completa de proteínas y colina, importante para el cerebro.'],
+                challenges: ['Es uno de los alérgenos más comunes en niños.', 'La textura (revuelto, frito, cocido) varía mucho y puede generar rechazo.'],
+                tips: 'Experimenta con diferentes preparaciones. El huevo revuelto suele ser el más aceptado. También se puede usar en panqueques, muffins o rebozados.'
+            },
+            {
+                name: 'galletas',
+                aliases: ['dulces', 'chuches', 'gominolas'],
+                benefits: [],
+                challenges: ['Suelen tener alto contenido de azúcar, harinas refinadas, colorantes y aditivos.', 'Pueden contener gluten y otros alérgenos.', 'Refuerzan la preferencia por sabores muy dulces, dificultando la aceptación de otros alimentos.'],
+                tips: 'Ofrecer con moderación y no como premio. Busca opciones integrales con bajo contenido de azúcar o prepara versiones caseras donde controles los ingredientes.'
+            },
+            {
+                name: 'zanahoria',
+                aliases: ['zanahorias'],
+                benefits: ['Rica en Vitamina A (salud visual) y fibra.', 'Su sabor dulce y textura crujiente (cruda) suelen gustar.'],
+                challenges: ['Cocida puede tener una textura demasiado blanda para algunos.'],
+                tips: 'Ofrece palitos de zanahoria cruda con hummus. Rallada se puede añadir fácilmente a salsas o ensaladas. Cocida, queda muy bien en purés o sopas.'
+            }
+        ];
+
+        function searchFood() {
+            const query = foodSearchInput.value.toLowerCase().trim();
+            if (query === '') {
+                foodSearchResult.innerHTML = '';
+                return;
+            }
+
+            const foundFood = foodDatabase.find(food => 
+                food.name.toLowerCase() === query || 
+                (food.aliases && food.aliases.includes(query))
+            );
+
+            if (foundFood) {
+                let benefitsHtml = '';
+                if (foundFood.benefits.length > 0) {
+                    benefitsHtml = `
+                        <h4 class="font-semibold text-green-700">Beneficios Potenciales:</h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-1 mt-1">
+                            ${foundFood.benefits.map(b => `<li>${b}</li>`).join('')}
+                        </ul>
+                    `;
+                }
+
+                let challengesHtml = '';
+                if (foundFood.challenges.length > 0) {
+                    challengesHtml = `
+                        <h4 class="font-semibold text-amber-700 mt-4">Desafíos Comunes:</h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-1 mt-1">
+                            ${foundFood.challenges.map(c => `<li>${c}</li>`).join('')}
+                        </ul>
+                    `;
+                }
+
+                foodSearchResult.innerHTML = `
+                    <div class="border border-slate-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-slate-800 capitalize">${foundFood.name}</h3>
+                        <div class="mt-4">
+                            ${benefitsHtml}
+                            ${challengesHtml}
+                            <h4 class="font-semibold text-sky-700 mt-4">Consejos y Preparación:</h4>
+                            <p class="text-slate-600 mt-1">${foundFood.tips}</p>
+                        </div>
+                    </div>
+                `;
+            } else {
+                foodSearchResult.innerHTML = `
+                    <div class="border border-red-200 bg-red-50 text-red-700 rounded-lg p-4">
+                        <p><strong class="font-semibold">Alimento no encontrado.</strong> Prueba con un término más simple (ej: "manzana" en lugar de "manzanas rojas").</p>
+                    </div>
+                `;
+            }
+        }
+
+        foodSearchButton.addEventListener('click', searchFood);
+        foodSearchInput.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                searchFood();
+            }
+        });
+
+    </script>
+
+</body>
+</html>
+
